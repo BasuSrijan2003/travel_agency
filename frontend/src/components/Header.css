@@ -1,0 +1,31 @@
+/* Dark Mode Gradient Navbar */
+.gradient-navbar {
+  background: linear-gradient(90deg, #1e1e1e, #3b3b3b); /* Dark Gradient */
+  transition: background-color 0.3s ease-in-out;
+  height: 80px; /* Make navbar thicker */
+  display: flex;
+  align-items: center;
+}
+
+/* Solid Navbar when scrolled */
+.solid-navbar {
+  background: linear-gradient(90deg, #121212, #292929);
+}
+
+/* Make Navbar Text White */
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+  color: white !important;
+}
+
+/* Increase Navbar Padding */
+.navbar-custom {
+  padding: 20px 15px; /* Increase thickness */
+}
+
+/* Navbar Button Spacing */
+.navbar-custom .btn {
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 8px 15px;
+}

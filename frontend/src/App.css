@@ -1,0 +1,115 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  text-align: center;
+  color: rgb(244, 24, 24);
+}
+.navbar {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-color: #4c90d4;
+  color: rgb(189, 66, 66);
+  padding: 50px 0;
+  text-align: center;
+}
+/* html, body {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footer {
+  background-color: #343a40;
+  color: rgb(82, 134, 222);
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto;
+}
+ */
+/* Ensure the footer is at the bottom */
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+#root, .app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures full page height */
+}
+
+.main-content {
+  flex: 1;
+  padding-bottom: 50px; /* Adds extra spacing before footer */
+}
+
+
+
+
+
+/* Centering the Search Box */
+.search-box {
+  max-width: 400px;
+  width: 100%;
+  position: relative; /* Needed for absolute dropdown positioning */
+}
+
+/* Curved input field */
+.search-input {
+  border-radius: 20px 0 0 20px !important;
+  border: 1px solid #ccc;
+}
+
+/* Curved left edge for the search icon */
+.search-icon {
+  background: white;
+  border-radius: 20px 0 0 20px;
+  border: 1px solid #ccc;
+}
+
+/* Curved right edge for the search button */
+.search-box button {
+  border-radius: 0 20px 20px 0 !important;
+}
+
+/* Search Dropdown Suggestions */
+.search-dropdown {
+  position: absolute;
+  top: 50px; /* Positions below the input field */
+  width: 100%;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.search-dropdown .list-group-item {
+  cursor: pointer;
+}
+
+.search-dropdown .list-group-item:hover {
+  background-color: #f0f0f0;
+}
+/* Custom Navbar Color */
+
